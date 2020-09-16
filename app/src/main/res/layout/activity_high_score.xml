@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hang_man.HighScoreActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HALL OF FAME"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <View android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.6"
+            android:text="Name"
+            android:textSize="25dp"
+            android:textColor="#ba49f2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.2"
+            android:text="Score"
+            android:textSize="25dp"
+            android:textColor="#ba49f2"/>
+        <View android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="70"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ListView
+            android:id="@+id/hsa_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/hsa_homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/hsa_retryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:textSize="20dp"
+            android:layout_toStartOf="@+id/hsa_homeBtn"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

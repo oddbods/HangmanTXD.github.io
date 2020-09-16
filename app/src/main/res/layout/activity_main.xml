@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF000000"
+	android:paddingBottom="10dp"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp"
+	tools:context="com.example.hang_man.MainActivity" >
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:src="@drawable/android_hangman_bg" />
+
+	<Button
+		android:id="@+id/playBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:text="Play"
+		android:textColor="#FFFF0000" />
+
+	<Button
+		android:id="@+id/QuestionManBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Question management"
+		android:layout_below="@+id/playBtn"
+		android:layout_centerHorizontal="true"
+		android:textColor="#FFFF0000"/>
+
+	<Button
+		android:id="@+id/ma_highscore"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Score board"
+		android:layout_below="@+id/QuestionManBtn"
+		android:layout_centerHorizontal="true"
+		android:textColor="#FFFF0000"/>
+
+</RelativeLayout>

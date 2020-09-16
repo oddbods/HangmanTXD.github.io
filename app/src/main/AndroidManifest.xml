@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hangman"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pepesuicide"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.hang_man.YourScoreActivity"></activity>
+        <activity android:name="com.example.hang_man.HighScoreActivity" />
+        <activity android:name="com.example.hang_man.QuestionEditActivity" />
+        <activity android:name="com.example.hang_man.AddQuestionActivity" />
+        <activity android:name="com.example.hang_man.QuestionLayout" />
+        <activity android:name="com.example.hang_man.QuestionActivity" />
+        <activity
+            android:name="com.example.hang_man.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hang_man.GameActivity"
+            android:parentActivityName="com.example.hang_man.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

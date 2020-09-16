@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:background="#FF000000"
+	android:orientation="vertical"
+	android:paddingBottom="10dp"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="10dp" >
+
+	<!-- gallows area -->
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFFFF"
+		android:gravity="center"
+		android:paddingTop="15dp" >
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/gallows"
+			android:paddingLeft="0dp"
+			android:paddingTop="0dp"
+			android:src="@drawable/android_hangman_gallows" />
+
+		<ImageView
+			android:id="@+id/head"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/head"
+			android:paddingLeft="52dp"
+			android:paddingTop="59dp"
+			android:src="@drawable/android_hangman_head" />
+
+		<ImageView
+			android:id="@+id/body"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/body"
+			android:paddingLeft="59dp"
+			android:paddingTop="82dp"
+			android:src="@drawable/android_hangman_body" />
+
+		<ImageView
+			android:id="@+id/leg1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/leg"
+			android:paddingLeft="60dp"
+			android:paddingTop="100dp"
+			android:src="@drawable/android_hangman_leg1" />
+
+		<ImageView
+			android:id="@+id/leg2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/leg"
+			android:paddingLeft="73dp"
+			android:paddingTop="100dp"
+			android:src="@drawable/android_hangman_leg2" />
+
+		<ImageView
+			android:id="@+id/arm2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/arm"
+			android:paddingLeft="70dp"
+			android:paddingTop="88dp"
+			android:src="@drawable/android_hangman_arm2" />
+
+		<ImageView
+			android:id="@+id/arm1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/arm"
+			android:paddingLeft="30dp"
+			android:paddingTop="90dp"
+			android:src="@drawable/android_hangman_arm1" />
+
+	</RelativeLayout>
+
+	<!-- word spaces -->
+
+	<LinearLayout
+		android:id="@+id/word"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:background="#FFFFFFFF"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="10dp" >
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Score:"
+			android:textSize="25dp" />
+		<TextView
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25dp"
+			android:id="@+id/ag_score" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ag_hint"
+		android:textSize="30dp"
+		/>
+
+	<GridView
+		android:id="@+id/letters"
+		android:layout_width="fill_parent"
+		android:layout_height="281dp"
+		android:layout_gravity="center"
+		android:layout_marginBottom="5dp"
+		android:background="#FF000000"
+		android:horizontalSpacing="5dp"
+		android:numColumns="7"
+		android:padding="5dp"
+		android:stretchMode="columnWidth"
+		android:verticalSpacing="5dp" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ag_timer"
+		android:textSize="30dp"
+		android:textColor="#FF0000" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hang_man.QuestionEditActivity">
+
+    <TextView
+        android:id="@+id/qea_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:layout_above="@+id/qea_word"
+        android:layout_toStartOf="@+id/qea_etid"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/qea_etid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qea_etword"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/qea_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/qea_etword"
+        android:text="WORD: "
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/qea_etword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/qea_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="HINT: "
+        android:layout_below="@+id/qea_word"
+        android:layout_toStartOf="@+id/qea_ethint"/>
+
+    <EditText
+        android:id="@+id/qea_ethint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/qea_etword"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/qea_backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/qea_delbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/qea_applybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APPLY"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/qea_delbtn"/>
+
+</RelativeLayout>

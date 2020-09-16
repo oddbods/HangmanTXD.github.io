@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hang_man.QuestionLayout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/qe_tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/qe_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUESTION: "
+        android:layout_below="@+id/qe_tvid"/>
+
+    <TextView
+        android:id="@+id/qe_tvhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HINT"
+        android:layout_toEndOf="@+id/qe_question"
+        android:layout_below="@+id/qe_tvid"/>
+
+    <TextView
+        android:id="@+id/qe_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANSWER: "
+        android:layout_below="@+id/qe_question"/>
+
+    <TextView
+        android:id="@+id/qe_tvword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WORD"
+        android:layout_below="@+id/qe_tvhint"
+        android:layout_toEndOf="@id/qe_answer"/>
+
+</RelativeLayout>
